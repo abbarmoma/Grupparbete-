@@ -1,12 +1,15 @@
 body {
     padding: 0;
     margin: 0;
+    background: url('https://bgfons.com/uploads/paper/paper_texture315.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .menu {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(12, 11, 11);
+    background-color: rgb(72, 33, 33);
     height: 60px;
     padding-top: 20px;
 }
@@ -18,9 +21,7 @@ a {
     text-shadow: 1px 1px 1px gray;
     text-align: center;
     padding-left: 10px;
-    border: white;
-    background-color: rgb(12, 11, 11);
-    margin-left: 100px;
+    margin-left: 90px;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -33,4 +34,9 @@ a:hover {
 h1{
     text-align: center;
     
+}
+
+p{
+    font-size: larger;
+    font-family: times;
 }
