@@ -40,3 +40,18 @@ p{
     font-size: larger;
     font-family: times;
 }
+
+#sensor{
+    margin-left: 200px;
+    font-style: normal;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#graf{
+    height: 300px;
+    width: 500px;
+    border: 3px black solid;
+    margin-left: 200px;
+    margin-top: 800px;
+}
