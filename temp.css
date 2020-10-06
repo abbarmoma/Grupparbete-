@@ -41,6 +41,18 @@ p{
     font-family: times;
 }
 
+.white-box {
+    background-color: white; 
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+    width: 400px;
+    border-radius: 70px;
+    border: green solid 5px;
+    margin-top: 20px;
+     
+}
+
 #sensor{
     margin-left: 200px;
     font-style: normal;
