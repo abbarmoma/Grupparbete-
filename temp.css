@@ -5,14 +5,6 @@ body {
     background-size: cover;
 }
 
-.menu {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: rgb(101, 131, 72);
-    height: 60px;
-    padding-top: 20px;
-}
-
 .menu-klass {
     margin-left: auto;
     margin-right: auto;
@@ -60,7 +52,7 @@ a {
     text-shadow: 1px 1px 1px gray;
     text-align: center;
     padding-left: 10px;
-    margin-left: 190px;
+    margin-left: 90px;
     margin-right: auto;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
