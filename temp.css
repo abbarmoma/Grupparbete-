@@ -44,7 +44,8 @@ a {
     text-shadow: 1px 1px 1px gray;
     text-align: center;
     padding-left: 10px;
-    margin-left: 90px;
+    margin-left: 190px;
+    margin-right: auto;
     font-size: 25px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
