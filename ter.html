@@ -4,7 +4,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature sensor</title>
     <link rel="stylesheet" href="temp.css">
-    <script src="temp.js"></script>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="graf.js"></script>
 </head>
 <body style="background-image: url(https://i.pinimg.com/originals/b8/4e/e0/b84ee09c72fa8e77be081385deb4ab41.jpg);height: 600px;">
     <nav id="cont" class="menu-ter">
@@ -27,12 +29,15 @@
         </div>
     
        
+    <div>
+    
+        <div id="container" style="margin-top: 800px; margin-right: 900px; height: 700px; width: 900px;"></div>
+
     </div>
     
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
 
-    <div id="chartContainer" style="height: 300px; width: 500px;">
 
-    </div>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="temp.js"></script>
 </body>
 </html>

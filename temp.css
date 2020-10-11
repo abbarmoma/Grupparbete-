@@ -3,6 +3,7 @@ body {
     margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .menu-klass {
@@ -162,3 +163,25 @@ p{
     font-size: x-large;
     font-weight: bold;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    scroll-behavior: smooth;
+  }
+  
+  #myBtn:hover {
+    background-color: lightblue;
+  }
+  

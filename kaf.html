@@ -4,6 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature sensor</title>
     <link rel="stylesheet" href="temp.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="graf.js"></script>
 </head>
 <body style="background-image: url(https://image.freepik.com/free-vector/cartoon-cafe-with-window-cozy-interior-with-coffee-machine-table_1441-2413.jpg); height: 600px;">
     <nav id="cont" class="menu-kaf">
@@ -27,11 +29,13 @@
    
     
 
-    <div id="graf"></div>
+    <div>
+    
+        <div id="container" style="margin-top: 800px; margin-right: 900px; height: 700px; width: 900px;"></div>
 
     </div>
 
-
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Up</button>
 
     <script src="temp.js"></script>
 </body>
