@@ -108,6 +108,7 @@ p{
     border:  rgb(131, 110, 72) solid 5px;
     margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 0%;
 }
 
 .white-box-vard {
@@ -173,7 +174,7 @@ p{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color: blue;
+    background-color:green;
     color: white;
     cursor: pointer;
     padding: 15px;
@@ -184,4 +185,9 @@ p{
   #myBtn:hover {
     background-color: lightblue;
   }
-  
+  #container{
+    margin-top: 600px;  
+    height: 600px; 
+    width: 1263px; 
+    margin-left: 0px;
+  }
