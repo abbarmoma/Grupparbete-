@@ -1,5 +1,24 @@
 <html lang="en">
 <head>
+
+    <script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.21.1/firebase-database.js"></script>
+<script>
+// Your web app's Firebase configuration
+var firebaseConfig = {
+apiKey: "AIzaSyBzUcU8IMRQhFFTlFEVHAwtAUAqjlKXr4g",
+authDomain: "termometer-projekt-basgrupp3.firebaseapp.com",
+databaseURL: "https://termometer-projekt-basgrupp3.firebaseio.com",
+projectId: "termometer-projekt-basgrupp3",
+storageBucket: "termometer-projekt-basgrupp3.appspot.com",
+messagingSenderId: "1001291187643",
+appId: "1:1001291187643:web:c33ab3c35ea52a986df09e",
+measurementId: "G-CT10FT60Q7",
+ };
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Temperature sensor</title>
@@ -21,10 +40,10 @@
 
         <div><h1>Vardagsrummet</h1></div>
         <div>
-            <p id="sensor">Nuvarande Temperatur:</p>
+            <p id="temp4">Nuvarande Temperatur:</p>
         </div>
         <div>
-            <p id="humidity">Fuktighet:</p>
+            <p id="humidity4">Fuktighet:</p>
         </div>
     </div>
 
