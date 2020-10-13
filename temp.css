@@ -41,7 +41,7 @@ body {
 .menu-kaf {
     margin-left: auto;
     margin-right: auto;
-    background-color: rgb(101, 131, 72);
+    background-color: rgba(29, 58, 138, 0.726);
     height: 60px;
     padding-top: 20px;
 }
@@ -136,34 +136,108 @@ p{
 }
 
 .white-box-kaf {
-    background-color:white;
+    background-color:rgba(6, 150, 160, 0.548);
     margin-left: auto;
     margin-right: auto;
     height: 400px;
     width: 400px;
     border-radius: 70px;
-    border: green solid 5px;
+    border: rgb(30, 30, 230) solid 5px;
     margin-top: 20px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 
-#sensor{
-    padding-left: 50%;
-    padding-right: 50%;
+#temp1{
+    margin-top: 0px;
+    padding-left: 25%;
+    padding-right: 55%;
     font-style: normal;
-    font-size: x-large;
+    font-size: 80px;
     font-weight: bold;
 }
 
 
-#humidity{
-    margin-top: 180px;
-    margin-left: 60px;
+#humidity1{
+    margin-top: 0px;
+    margin-left: 140px;
     font-style: normal;
-    font-size: x-large;
+    font-size: 50px;
     font-weight: bold;
 }
+
+#temp2{
+    margin-top: 0px;
+    padding-left: 25%;
+    padding-right: 55%;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+#humidity2{
+    margin-top: 0px;
+    margin-left: 140px;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#temp3{
+    margin-top: 0px;
+    padding-left: 25%;
+    padding-right: 55%;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+#humidity3{
+    margin-top: 0px;
+    margin-left: 140px;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#temp4{
+    margin-top: 0px;
+    padding-left: 25%;
+    padding-right: 55%;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+#humidity4{
+    margin-top: 0px;
+    margin-left: 140px;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#temp5{
+    margin-top: 0px;
+    padding-left: 25%;
+    padding-right: 55%;
+    font-style: normal;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
+#humidity5{
+    margin-top: 0px;
+    margin-left: 140px;
+    font-style: normal;
+    font-size: 50px;
+    font-weight: bold;
+}
+
 
 #myBtn {
     display: none;
@@ -174,12 +248,14 @@ p{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:green;
+    background-color:rgb(0, 102, 255);
     color: white;
     cursor: pointer;
     padding: 15px;
-    border-radius: 4px;
+    border-radius: 100px;
     scroll-behavior: smooth;
+    height: 70px;
+    width: 70px;
   }
   
   #myBtn:hover {
@@ -191,3 +267,4 @@ p{
     width: 1263px; 
     margin-left: 0px;
   }
+
