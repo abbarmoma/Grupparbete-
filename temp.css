@@ -236,12 +236,19 @@ p{
     font-weight: bold;
 }
 
+#medelvärde{
+    margin-top: -60px;
+    margin-left: 115;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: bold;
+}
 
 #myBtn {
     display: none;
     position: fixed;
-    bottom: 20px;
-    right: 30px;
+    bottom: 5vw;
+    right: 4vw;
     z-index: 99;
     font-size: 18px;
     border: none;
