@@ -119,3 +119,7 @@ function updateHumid5(value) {
 let t = document.getElementById('humidity5')
 t.innerHTML = Math.round(value*10)/10 + ('%')
 }
+
+var medelvärde = document.getElementById (medelvärde)
+var arr = [1,2,3,4,5]
+console.log(arr.sum() / arr.length)
