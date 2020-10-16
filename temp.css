@@ -260,7 +260,35 @@ p{
   #myBtn:hover {
     background-color: lightblue;
   }
-  #container{
+  #container1{
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px; 
+    width: 90vw; 
+  }
+  #container2{
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px; 
+    width: 90vw; 
+  }
+  #container3{
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px; 
+    width: 90vw; 
+  }
+  #container4{
+    margin-top: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 600px; 
+    width: 90vw; 
+  }
+  #container5{
     margin-top: 600px;
     margin-left: auto;
     margin-right: auto;

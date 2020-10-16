@@ -141,8 +141,7 @@ let t = document.getElementById('humidity5')
   }
 }
 
-var medelvärde = document.getElementById (medelvärde)
-var arr = [1,2,3,4,5]
+
 // console.log(arr.sum() / arr.length)
 
 // GRAF-DELEN-KLASSRUMMET
@@ -186,7 +185,160 @@ function drawChart(list) {
       legend: { position: 'bottom' },
     };
   
-    var chart = new google.visualization.LineChart(document.getElementById('container'));
+    var chart = new google.visualization.LineChart(document.getElementById('container1'));
   
     chart.draw(data, options);
   }
+
+
+// GRAF-DELEN-TERRARIET
+
+let myData2 = [
+  ['Year', 'Temperatur']	
+]
+
+let todaysTemps2 = database.ref('temp-time/temp-time2/' + getCurrentDate()).limitToLast(24);
+
+todaysTemps2.on('value', function(snapshot) {
+  console.log(snapshot.val())
+  updateGraf2(snapshot.val());
+});
+
+google.charts.load('current', {packages: ['corechart', 'line']});
+google.charts.setOnLoadCallback(drawChart);
+
+
+function updateGraf2(value) {
+  let x = Object.entries(value)
+  myData.push(...x)
+  drawChart2(myData)
+}	
+
+function drawChart2(list) {
+
+  var data = google.visualization.arrayToDataTable(list);
+
+    var options = {
+      title: 'Temperatur och Luftfuktighet',
+      curveType: 'function',
+      legend: { position: 'bottom' },
+    };
+  
+    var chart = new google.visualization.LineChart(document.getElementById('container2'));
+  
+    chart.draw(data, options);
+  }
+
+  //GRAF-DELEN-KAFETERIAN
+
+  let myData3 = [
+    ['Year', 'Temperatur']	
+  ]
+  
+  let todaysTemps3 = database.ref('temp-time/temp-time3/' + getCurrentDate()).limitToLast(24);
+  
+  todaysTemps3.on('value', function(snapshot) {
+    console.log(snapshot.val())
+    updateGraf3(snapshot.val());
+  });
+  
+  google.charts.load('current', {packages: ['corechart', 'line']});
+  google.charts.setOnLoadCallback(drawChart);
+  
+  
+  function updateGraf3(value) {
+    let x = Object.entries(value)
+    myData.push(...x)
+    drawChart3(myData)
+  }	
+  
+  function drawChart3(list) {
+  
+    var data = google.visualization.arrayToDataTable(list);
+  
+      var options = {
+        title: 'Temperatur och Luftfuktighet',
+        curveType: 'function',
+        legend: { position: 'bottom' },
+      };
+    
+      var chart = new google.visualization.LineChart(document.getElementById('container3'));
+    
+      chart.draw(data, options);
+    }
+
+    //GRAF-DELEN-VARDAGSRUMMET
+
+    let myData4 = [
+      ['Year', 'Temperatur']	
+    ]
+    
+    let todaysTemps4 = database.ref('temp-time/temp-time4/' + getCurrentDate()).limitToLast(24);
+    
+    todaysTemps4.on('value', function(snapshot) {
+      console.log(snapshot.val())
+      updateGraf4(snapshot.val());
+    });
+    
+    google.charts.load('current', {packages: ['corechart', 'line']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    
+    function updateGraf4(value) {
+      let x = Object.entries(value)
+      myData.push(...x)
+      drawChart4(myData)
+    }	
+    
+    function drawChart4(list) {
+    
+      var data = google.visualization.arrayToDataTable(list);
+    
+        var options = {
+          title: 'Temperatur och Luftfuktighet',
+          curveType: 'function',
+          legend: { position: 'bottom' },
+        };
+      
+        var chart = new google.visualization.LineChart(document.getElementById('container4'));
+      
+        chart.draw(data, options);
+      }
+
+      //GRAF-DELEN-BIBLIOTEK
+
+      let myData5 = [
+        ['Year', 'Temperatur']	
+      ]
+      
+      let todaysTemps5 = database.ref('temp-time/temp-time5/' + getCurrentDate()).limitToLast(24);
+      
+      todaysTemps5.on('value', function(snapshot) {
+        console.log(snapshot.val())
+        updateGraf5(snapshot.val());
+      });
+      
+      google.charts.load('current', {packages: ['corechart', 'line']});
+      google.charts.setOnLoadCallback(drawChart);
+      
+      
+      function updateGraf5(value) {
+        let x = Object.entries(value)
+        myData.push(...x)
+        drawChart5(myData)
+      }	
+      
+      function drawChart5(list) {
+      
+        var data = google.visualization.arrayToDataTable(list);
+      
+          var options = {
+            title: 'Temperatur och Luftfuktighet',
+            curveType: 'function',
+            legend: { position: 'bottom' },
+          };
+        
+          var chart = new google.visualization.LineChart(document.getElementById('container5'));
+        
+          chart.draw(data, options);
+        }
