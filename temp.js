@@ -1,3 +1,6 @@
+
+//SCROLLKNAPP
+
 var mybutton = document.getElementById("myBtn");
 
 
@@ -17,6 +20,8 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
+
+//KLASSRUMMET
 let database = firebase.database()
  
 let temp1 = database.ref('temps/temp1');
@@ -37,6 +42,7 @@ function updateTemp1(value) {
   }
 }
  
+//TERRARIET
 function updateHumid1(value) {
 let t = document.getElementById('humidity1')
 if(t != null) {
@@ -67,6 +73,8 @@ if(t != null) {
   t.innerHTML = Math.round(value*10)/10 + ('%')
 }
 }
+
+//KAFETERIAN
 let temp3 = database.ref('temps/temp3');
 let humid3 = database.ref('humidity/humidity3')
  
@@ -94,6 +102,7 @@ if(t != null) {
 let temp4 = database.ref('temps/temp4');
 let humid4 = database.ref('humidity/humidity4')
  
+//VARDAGSRUMMET
 temp4.on('value', function(snapshot) {
 updateTemp4(snapshot.val());
 });
@@ -116,6 +125,7 @@ if(t != null) {
 }
 }
 
+//BIBLIOTEK
 let temp5 = database.ref('temps/temp5');
 let humid5 = database.ref('humidity/humidity5')
  
@@ -142,7 +152,6 @@ let t = document.getElementById('humidity5')
 }
 
 
-// console.log(arr.sum() / arr.length)
 
 // GRAF-DELEN-KLASSRUMMET
 let myData = [
@@ -180,7 +189,7 @@ function drawChart(list) {
   var data = google.visualization.arrayToDataTable(list);
 
     var options = {
-      title: 'Temperatur och Luftfuktighet',
+      title: 'Temperatur',
       curveType: 'function',
       legend: { position: 'bottom' },
     };
@@ -219,7 +228,7 @@ function drawChart2(list) {
   var data = google.visualization.arrayToDataTable(list);
 
     var options = {
-      title: 'Temperatur och Luftfuktighet',
+      title: 'Temperatur',
       curveType: 'function',
       legend: { position: 'bottom' },
     };
@@ -257,7 +266,7 @@ function drawChart2(list) {
     var data = google.visualization.arrayToDataTable(list);
   
       var options = {
-        title: 'Temperatur och Luftfuktighet',
+        title: 'Temperatur',
         curveType: 'function',
         legend: { position: 'bottom' },
       };
@@ -295,7 +304,7 @@ function drawChart2(list) {
       var data = google.visualization.arrayToDataTable(list);
     
         var options = {
-          title: 'Temperatur och Luftfuktighet',
+          title: 'Temperatur',
           curveType: 'function',
           legend: { position: 'bottom' },
         };
@@ -333,7 +342,7 @@ function drawChart2(list) {
         var data = google.visualization.arrayToDataTable(list);
       
           var options = {
-            title: 'Temperatur och Luftfuktighet',
+            title: 'Temperatur',
             curveType: 'function',
             legend: { position: 'bottom' },
           };
