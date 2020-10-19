@@ -219,8 +219,8 @@ google.charts.setOnLoadCallback(drawChart);
 
 function updateGraf2(value) {
   let x = Object.entries(value)
-  myData.push(...x)
-  drawChart2(myData)
+  myData2.push(...x)
+  drawChart2(myData2)
 }	
 
 function drawChart2(list) {
@@ -257,8 +257,8 @@ function drawChart2(list) {
   
   function updateGraf3(value) {
     let x = Object.entries(value)
-    myData.push(...x)
-    drawChart3(myData)
+    myData3.push(...x)
+    drawChart3(myData3)
   }	
   
   function drawChart3(list) {
@@ -295,8 +295,8 @@ function drawChart2(list) {
     
     function updateGraf4(value) {
       let x = Object.entries(value)
-      myData.push(...x)
-      drawChart4(myData)
+      myData4.push(...x)
+      drawChart4(myData4)
     }	
     
     function drawChart4(list) {
@@ -333,8 +333,8 @@ function drawChart2(list) {
       
       function updateGraf5(value) {
         let x = Object.entries(value)
-        myData.push(...x)
-        drawChart5(myData)
+        myData5.push(...x)
+        drawChart5(myData5)
       }	
       
       function drawChart5(list) {
