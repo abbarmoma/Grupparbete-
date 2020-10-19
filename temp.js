@@ -153,7 +153,7 @@ let t = document.getElementById('humidity5')
 
 
 
-// GRAF-DELEN-KLASSRUMMET
+// GRAF-KLASSRUMMET
 let myData = [
   ['Year', 'Temperatur']	
 ]
@@ -171,7 +171,7 @@ google.charts.setOnLoadCallback(drawChart);
 function getCurrentDate() {
   var today = new Date();
   var dd = String(today.getDate()).padStart(2, '0');
-  var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  var mm = String(today.getMonth() + 1).padStart(2, '0'); 
   var yyyy = today.getFullYear();
 
   today = yyyy + '-' + mm + '-' + dd;
@@ -189,7 +189,7 @@ function drawChart(list) {
   var data = google.visualization.arrayToDataTable(list);
 
     var options = {
-      title: 'Temperatur',
+      title: 'Senaste 24 timmar',
       curveType: 'function',
       legend: { position: 'bottom' },
     };
@@ -200,7 +200,7 @@ function drawChart(list) {
   }
 
 
-// GRAF-DELEN-TERRARIET
+// GRAF-TERRARIET
 
 let myData2 = [
   ['Year', 'Temperatur']	
@@ -228,7 +228,7 @@ function drawChart2(list) {
   var data = google.visualization.arrayToDataTable(list);
 
     var options = {
-      title: 'Temperatur',
+      title: 'Senaste 24 timmar',
       curveType: 'function',
       legend: { position: 'bottom' },
     };
@@ -238,7 +238,7 @@ function drawChart2(list) {
     chart.draw(data, options);
   }
 
-  //GRAF-DELEN-KAFETERIAN
+  //GRAF-KAFETERIAN
 
   let myData3 = [
     ['Year', 'Temperatur']	
@@ -266,7 +266,7 @@ function drawChart2(list) {
     var data = google.visualization.arrayToDataTable(list);
   
       var options = {
-        title: 'Temperatur',
+        title: 'Senaste 24 timmar',
         curveType: 'function',
         legend: { position: 'bottom' },
       };
@@ -276,7 +276,7 @@ function drawChart2(list) {
       chart.draw(data, options);
     }
 
-    //GRAF-DELEN-VARDAGSRUMMET
+    //GRAF-VARDAGSRUMMET
 
     let myData4 = [
       ['Year', 'Temperatur']	
@@ -304,7 +304,7 @@ function drawChart2(list) {
       var data = google.visualization.arrayToDataTable(list);
     
         var options = {
-          title: 'Temperatur',
+          title: 'Senaste 24 timmar',
           curveType: 'function',
           legend: { position: 'bottom' },
         };
@@ -314,7 +314,7 @@ function drawChart2(list) {
         chart.draw(data, options);
       }
 
-      //GRAF-DELEN-BIBLIOTEK
+      //GRAF-BIBLIOTEK
 
       let myData5 = [
         ['Year', 'Temperatur']	
@@ -342,7 +342,7 @@ function drawChart2(list) {
         var data = google.visualization.arrayToDataTable(list);
       
           var options = {
-            title: 'Temperatur',
+            title: 'Senaste 24 timmar',
             curveType: 'function',
             legend: { position: 'bottom' },
           };
