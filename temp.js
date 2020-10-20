@@ -1,54 +1,37 @@
 
-//SCROLLKNAPP
-
-var mybutton = document.getElementById("myBtn");
-
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
-
 
 //KLASSRUMMET-VÄRDEN
+//variablar som refererar till firebase
 let database = firebase.database()
- 
 let temp1 = database.ref('temps/temp1');
 let humid1 = database.ref('humidity/humidity1')
  
+//funktion med properties och methods för att hämta värden från firebase
 temp1.on('value', function(snapshot) {
 updateTemp1(snapshot.val());
 });
- 
+
+
 humid1.on('value', function(snapshot) {
 updateHumid1(snapshot.val());
 });
  
+//funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp1(value) {
   let t = document.getElementById('temp1')
   if(t != null) {
     t.innerHTML = Math.round(value*10)/10 + ('°C')
   }
 }
- 
-//TERRARIET-VÄRDEN
+
+//funktion för att uppdatera fuktighet och avrunda till 1 decimal
 function updateHumid1(value) {
 let t = document.getElementById('humidity1')
 if(t != null) {
   t.innerHTML = Math.round(value*10)/10 + ('%')
-}
-}
+}}
+
+//Terrariet-värden
 let temp2 = database.ref('temps/temp2');
 let humid2 = database.ref('humidity/humidity2')
  
@@ -60,13 +43,15 @@ humid2.on('value', function(snapshot) {
 updateHumid2(snapshot.val());
 });
  
+//funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp2(value) {
 let t = document.getElementById('temp2')
 if(t != null) {
   t.innerHTML = Math.round(value*10)/10 + ('°C')
 }
 }
- 
+
+//funktion för att uppdatera fuktighet och avrunda till 1 decimal
 function updateHumid2(value) {
 let t = document.getElementById('humidity2')
 if(t != null) {
@@ -86,6 +71,7 @@ humid3.on('value', function(snapshot) {
 updateHumid3(snapshot.val());
 });
  
+//funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp3(value){
 let t = document.getElementById('temp3')
 if(t != null) {
@@ -93,6 +79,7 @@ if(t != null) {
 }
 }
  
+//funktion för att uppdatera fuktighet och avrunda till 1 decimal
 function updateHumid3(value) {
 let t = document.getElementById('humidity3')
 if(t != null) {
@@ -111,13 +98,14 @@ humid4.on('value', function(snapshot) {
 updateHumid4(snapshot.val());
 });
  
+//funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp4(value) {
 let t = document.getElementById('temp4')
 if(t != null) {
   t.innerHTML = Math.round(value*10)/10 + ('°C')
 }
 }
- 
+ //funktion för att uppdatera fuktighet och avrunda till 1 decimal
 function updateHumid4(value) {
 let t = document.getElementById('humidity4')
 if(t != null) {
@@ -137,13 +125,15 @@ humid5.on('value', function(snapshot) {
 updateHumid5(snapshot.val());
 });
  
+//funktion för att uppdatera temperatur och avrunda till 1 decimal
 function updateTemp5(value) {
 let t = document.getElementById('temp5')
 if(t != null) {
   t.innerHTML = Math.round(value*10)/10 + ('°C')
 }
 }
- 
+
+//funktion för att uppdatera fuktighet och avrunda till 1 decimal
 function updateHumid5(value) {
 let t = document.getElementById('humidity5')
   if(t != null) {
@@ -323,7 +313,6 @@ function drawChart2(list) {
       let todaysTemps5 = database.ref('temp-time/temp-time5/' + getCurrentDate()).limitToLast(24);
       
       todaysTemps5.on('value', function(snapshot) {
-        console.log(snapshot.val())
         updateGraf5(snapshot.val());
       });
       

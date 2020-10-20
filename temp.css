@@ -227,30 +227,6 @@ p{
     font-weight: bold;
 }
 
-
-
-#myBtn {
-    display: none;
-    position: fixed;
-    bottom: 5vw;
-    right: 3vw;
-    font-size: 18px;
-    border: none;
-    outline: none;
-    background-color:rgb(29, 58, 138, 0.726);
-    color: white;
-    cursor: pointer;
-    padding: 15px;
-    border-radius: 70px;
-    scroll-behavior: smooth;
-    height: 70px;
-    width: 75px;
-  }
-  
-  #myBtn:hover {
-    background-color: lightblue;
-  }
-
   /*storlek och placering för alla grafer till varje rum*/
   #container1{
     margin-top: 600px;
@@ -258,6 +234,9 @@ p{
     margin-right: auto;
     height: 600px; 
     width: 90vw; 
+    position: relative;
+    z-index: -20;
+    margin-bottom: 0px;
   }
   #container2{
     margin-top: 600px;
@@ -265,6 +244,8 @@ p{
     margin-right: auto;
     height: 600px; 
     width: 90vw; 
+    position: relative;
+    z-index: 1;
   }
   #container3{
     margin-top: 600px;
@@ -272,6 +253,8 @@ p{
     margin-right: auto;
     height: 600px; 
     width: 90vw; 
+    position: relative;
+    z-index: 1;
   }
   #container4{
     margin-top: 600px;
@@ -279,6 +262,8 @@ p{
     margin-right: auto;
     height: 600px; 
     width: 90vw; 
+    position: relative;
+    z-index: 1;
   }
   #container5{
     margin-top: 600px;
@@ -286,12 +271,16 @@ p{
     margin-right: auto;
     height: 600px; 
     width: 90vw; 
+    position: relative;
+    z-index: 1;
   }
 
   #con-container {
-      background-color: white;
-      width: 98,5vw;
-      height: 600px;
+    background-color: white;
+    width: 98,5vw;
+    height: 600px;
+    position: relative;
+    z-index: -20;
   }
 
   #cont {
@@ -311,6 +300,31 @@ p{
     scroll-behavior: smooth;
   }
 
+  #uppButton {
+    font-size: 18px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 25px;
+    border-radius: 70px;
+    height: 70px;
+    width: 75px;
+    background-color: cyan;
+  }
+  
+  #uppButton:hover {
+    background-color: lightblue;
+  }
+
+  #section2{
+    
+    z-index:-10;
+    margin-bottom: 0;
+    margin-top: 1100px;
+    position: absolute;
+    margin-left: 80vw;
+}
+  
 /*stil för Knappar till graferna*/  
 #downButton{
     font-size: 18px;
@@ -320,9 +334,9 @@ p{
     color: white;
     cursor: pointer;
     padding: 22px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-left: 90vw;
-    margin-top: 0;
+
 }
 
 #downButton:hover {
@@ -338,7 +352,7 @@ p{
     color: white;
     cursor: pointer;
     padding: 22px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-left: 90vw;
     margin-top: 0;
     
@@ -356,7 +370,7 @@ p{
     color: white;
     cursor: pointer;
     padding: 22px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-left: 90vw;
     margin-top: 0;
     
@@ -371,11 +385,11 @@ p{
     font-size: 18px;
     border: none;
     outline: none;
-    background-color:rgb(23, 136, 42);
+    background-color:rgb(23, 136, 42, 0.915);
     color: white;
     cursor: pointer;
     padding: 22px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-left: 90vw;
     margin-top: 0;
     
@@ -393,7 +407,7 @@ p{
     color: white;
     cursor: pointer;
     padding: 22px;
-    border-radius: 100px;
+    border-radius: 30px;
     margin-left: 90vw;
     margin-top: 0;
     
@@ -406,3 +420,4 @@ p{
 #section1{
     margin-top: 30px;
 }
+
