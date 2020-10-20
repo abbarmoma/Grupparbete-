@@ -21,7 +21,7 @@ function topFunction() {
 }
 
 
-//KLASSRUMMET
+//KLASSRUMMET-VÄRDEN
 let database = firebase.database()
  
 let temp1 = database.ref('temps/temp1');
@@ -42,7 +42,7 @@ function updateTemp1(value) {
   }
 }
  
-//TERRARIET
+//TERRARIET-VÄRDEN
 function updateHumid1(value) {
 let t = document.getElementById('humidity1')
 if(t != null) {
@@ -74,7 +74,7 @@ if(t != null) {
 }
 }
 
-//KAFETERIAN
+//KAFETERIAN-VÄRDEN
 let temp3 = database.ref('temps/temp3');
 let humid3 = database.ref('humidity/humidity3')
  
@@ -102,7 +102,7 @@ if(t != null) {
 let temp4 = database.ref('temps/temp4');
 let humid4 = database.ref('humidity/humidity4')
  
-//VARDAGSRUMMET
+//VARDAGSRUM-VÄRDEN
 temp4.on('value', function(snapshot) {
 updateTemp4(snapshot.val());
 });
@@ -125,7 +125,7 @@ if(t != null) {
 }
 }
 
-//BIBLIOTEK
+//BIBLIOTEK-VÄRDEN
 let temp5 = database.ref('temps/temp5');
 let humid5 = database.ref('humidity/humidity5')
  

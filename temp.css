@@ -1,3 +1,4 @@
+/*Bakrundbild*/
 body {
     padding: 0;
     margin: 0;
@@ -6,6 +7,7 @@ body {
     background-attachment: fixed;
 }
 
+/*menyn för alla rum*/
 .menu-klass {
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +48,7 @@ body {
     padding-top: 20px;
 }
 
+/*stilar för text i menyn*/
 a {
     
     text-decoration: none;
@@ -62,18 +65,20 @@ a:hover {
     
 }
 
+/*stilar för rubriker i boxen*/
 h1{
     text-align: center;
     
 }
 
+/*stilar för värdena i boxen*/
 p{
     font-size: larger;
     font-family: times;
 }
 
 
-
+/*stilar för boxen för varje rum*/
 .white-box-ter {
     background-color: rgba(84, 173, 89, 0.86);
     margin-left: auto;
@@ -135,7 +140,7 @@ p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-
+/*stil för värdena från tempsensorn*/
 #temp1{
     margin-top: 0px;
     text-align: center;
@@ -245,6 +250,8 @@ p{
   #myBtn:hover {
     background-color: lightblue;
   }
+
+  /*storlek och placering för alla grafer till varje rum*/
   #container1{
     margin-top: 600px;
     margin-left: auto;
@@ -293,15 +300,18 @@ p{
 
   }
 
+  /*gör att om browsern är mindre 1500px så är margin left 8vw*/
   @media screen and (max-width: 1500px) {
       a {
           margin-left: 8vw;
       }
   }
+  /*beteende på scrollknappen*/
   html {
     scroll-behavior: smooth;
   }
-  
+
+/*stil för Knappar till graferna*/  
 #downButton{
     font-size: 18px;
     border: none;
