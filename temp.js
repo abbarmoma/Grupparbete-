@@ -144,7 +144,7 @@ let t = document.getElementById('humidity5')
 
 
 // GRAF-KLASSRUMMET
-let myData = [
+let tempData = [
   ['Year', 'Temperatur']	
 ]
 
@@ -169,14 +169,14 @@ function getCurrentDate() {
 }
 
 function updateGraf(value) {
-  let x = Object.entries(value)
-  myData.push(...x)
-  drawChart(myData)
+  let grafKlass = Object.entries(value)
+  tempData.push(...grafKlass)
+  drawChart(tempData)
 }	
 
 function drawChart(list) {
 
-  var data = google.visualization.arrayToDataTable(list);
+  var dataKlass = google.visualization.arrayToDataTable(list);
 
     var options = {
       title: 'Senaste 24 timmar',
@@ -186,13 +186,13 @@ function drawChart(list) {
   
     var chart = new google.visualization.LineChart(document.getElementById('container1'));
   
-    chart.draw(data, options);
+    chart.draw(dataKlass, options);
   }
 
 
 // GRAF-TERRARIET
 
-let myData2 = [
+let tempData2 = [
   ['Year', 'Temperatur']	
 ]
 
@@ -208,14 +208,14 @@ google.charts.setOnLoadCallback(drawChart);
 
 
 function updateGraf2(value) {
-  let x = Object.entries(value)
-  myData2.push(...x)
-  drawChart2(myData2)
+  let grafTer = Object.entries(value)
+  tempData2.push(...grafTer)
+  drawChart2(tempData2)
 }	
 
 function drawChart2(list) {
 
-  var data = google.visualization.arrayToDataTable(list);
+  var dataTer = google.visualization.arrayToDataTable(list);
 
     var options = {
       title: 'Senaste 24 timmar',
@@ -225,12 +225,12 @@ function drawChart2(list) {
   
     var chart = new google.visualization.LineChart(document.getElementById('container2'));
   
-    chart.draw(data, options);
+    chart.draw(dataTer, options);
   }
 
   //GRAF-KAFETERIAN
 
-  let myData3 = [
+  let tempData3 = [
     ['Year', 'Temperatur']	
   ]
   
@@ -246,14 +246,14 @@ function drawChart2(list) {
   
   
   function updateGraf3(value) {
-    let x = Object.entries(value)
-    myData3.push(...x)
-    drawChart3(myData3)
+    let grafKaf = Object.entries(value)
+    tempData3.push(...grafKaf)
+    drawChart3(tempData3)
   }	
   
   function drawChart3(list) {
   
-    var data = google.visualization.arrayToDataTable(list);
+    var dataKaf = google.visualization.arrayToDataTable(list);
   
       var options = {
         title: 'Senaste 24 timmar',
@@ -263,12 +263,12 @@ function drawChart2(list) {
     
       var chart = new google.visualization.LineChart(document.getElementById('container3'));
     
-      chart.draw(data, options);
+      chart.draw(dataKaf, options);
     }
 
     //GRAF-VARDAGSRUMMET
 
-    let myData4 = [
+    let tempData4 = [
       ['Year', 'Temperatur']	
     ]
     
@@ -284,14 +284,14 @@ function drawChart2(list) {
     
     
     function updateGraf4(value) {
-      let x = Object.entries(value)
-      myData4.push(...x)
-      drawChart4(myData4)
+      let grafVard = Object.entries(value)
+      tempData4.push(...grafVard)
+      drawChart4(tempData4)
     }	
     
     function drawChart4(list) {
     
-      var data = google.visualization.arrayToDataTable(list);
+      var dataVard = google.visualization.arrayToDataTable(list);
     
         var options = {
           title: 'Senaste 24 timmar',
@@ -301,12 +301,12 @@ function drawChart2(list) {
       
         var chart = new google.visualization.LineChart(document.getElementById('container4'));
       
-        chart.draw(data, options);
+        chart.draw(dataVard, options);
       }
 
       //GRAF-BIBLIOTEK
 
-      let myData5 = [
+      let tempData5 = [
         ['Year', 'Temperatur']	
       ]
       
@@ -321,14 +321,14 @@ function drawChart2(list) {
       
       
       function updateGraf5(value) {
-        let x = Object.entries(value)
-        myData5.push(...x)
-        drawChart5(myData5)
+        let grafBibl = Object.entries(value)
+        tempData5.push(...grafBibl)
+        drawChart5(tempData5)
       }	
       
       function drawChart5(list) {
       
-        var data = google.visualization.arrayToDataTable(list);
+        var dataBibl = google.visualization.arrayToDataTable(list);
       
           var options = {
             title: 'Senaste 24 timmar',
@@ -338,5 +338,5 @@ function drawChart2(list) {
         
           var chart = new google.visualization.LineChart(document.getElementById('container5'));
         
-          chart.draw(data, options);
+          chart.draw(dataBibl, options);
         }
