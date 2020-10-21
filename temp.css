@@ -13,6 +13,7 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
+    padding-left: 3vw;
 }
 
 .menu-ter {
@@ -20,6 +21,7 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
+    padding-left: 3vw;
 }
 
 .menu-vard {
@@ -27,6 +29,7 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
+    padding-left: 3vw;
 }
 
 .menu-bibl {
@@ -34,6 +37,7 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
+    padding-left: 3vw;
 }
 
 .menu-kaf {
@@ -41,6 +45,7 @@ body {
     height: 3vw;
     padding-top: 1.5vw;
     padding-bottom: 0.5vw;
+    padding-left: 3vw;
 }
 
 /*stilar för text i menyn*/
@@ -313,7 +318,7 @@ p{
     
     z-index:2;
     margin-bottom: 0vw;
-    margin-top: 60vw;
+    margin-top: 59vw;
     position: absolute;
     margin-left: 80vw;
 }
